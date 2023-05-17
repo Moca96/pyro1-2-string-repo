@@ -8,7 +8,7 @@ class Data:
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("❣️ sᴜᴩᴩᴏʀᴛ ❣️", url="https://t.me/xd_area_51"),
+        [InlineKeyboardButton("❣️ sᴜᴩᴩᴏʀᴛ ❣️", url="https://t.me/zombie_area"),
          InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url="https://t.me/zadkiel_z"),
         ],
     ]
