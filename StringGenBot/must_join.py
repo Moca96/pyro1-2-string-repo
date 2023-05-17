@@ -13,14 +13,14 @@ async def must_join_channel(bot: Client, msg: Message):
             await bot.get_chat_member(MUST_JOIN, msg.from_user.id)
         except UserNotParticipant:
             if MUST_JOIN.isalpha():
-                link = "xd_area_51" + MUST_JOIN
+                link = "zombie_area" + MUST_JOIN
             else:
                 chat_info = await bot.get_chat(MUST_JOIN)
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(photo="https://te.legra.ph/file/f5c85e2b47ef379071aff.jpg", caption=f"» ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [ᴀʟᴘʜᴀ ᴄʜᴀᴛs]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [ᴀʟᴘʜᴀ ᴄʜᴀᴛs]({link}) ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ !",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("💖 Area chat ☕", url=f"{link}")]
+                        [InlineKeyboardButton("💖 zombie Area chat ☕", url=f"{link}")]
                     ])
                 )
                 await msg.stop_propagation()
